@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:todolistappexm/firebase_options.dart';
-import 'package:todolistappexm/view/homescreen/homescreen.dart';
+import 'package:todolistappexm/view/splashscreen/splashscreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Homescreen(),
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
